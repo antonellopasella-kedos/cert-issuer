@@ -1,4 +1,4 @@
-FROM seegno/bitcoind:0.13-alpine
+FROM lncm/bitcoind:v22.0
 MAINTAINER Kim Duffy "kimhd@mit.edu"
 
 COPY . /cert-issuer
@@ -17,7 +17,7 @@ RUN apk add --update \
         linux-headers \
         make \
         musl-dev \
-        python \
+        python2 \
         python3 \
         python3-dev \
         tar \
